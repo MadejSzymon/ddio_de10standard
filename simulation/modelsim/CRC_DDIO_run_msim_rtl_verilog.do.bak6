@@ -1,0 +1,33 @@
+transcript on
+if ![file isdirectory CRC_DDIO_iputf_libs] {
+	file mkdir CRC_DDIO_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vlog "C:/Users/delta/Documents/Intelprojects/CRC_DDIO/pll_sim/pll.vo"
+
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/debouncer.v}
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/top.v}
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/tb.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO {C:/Users/delta/Documents/Intelprojects/CRC_DDIO/tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+
+add wave *
+view structure
+view signals
+run 1000 ns

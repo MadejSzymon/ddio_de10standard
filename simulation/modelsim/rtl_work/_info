@@ -1,0 +1,376 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/delta/Documents/Intelprojects/CRC_DDIO/simulation/modelsim
+vDDIO_IN
+Z1 !s110 1617283375
+!i10b 1
+!s100 Ok;8Y3NKj9TjS6m8E2n@61
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBHEnSd@g7A]nmd56`k<0m3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1617203646
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_IN.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_IN.v
+!i122 9
+L0 40 36
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1617283375.000000
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_IN.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_IN.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO
+Z8 tCvgOpt 0
+n@d@d@i@o_@i@n
+vDDIO_OUT
+R1
+!i10b 1
+!s100 7jS?a?fkOE3^JK]IR;0MS0
+R2
+IHAUIJRED?BUEfzORo]alE0
+R3
+R0
+w1617203613
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT.v
+!i122 8
+Z9 L0 40 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT.v|
+!i113 1
+R6
+R7
+R8
+n@d@d@i@o_@o@u@t
+vDDIO_OUT_clk
+R1
+!i10b 1
+!s100 =TGkU:Mc1mM1kezW9T=][1
+R2
+I`R33F]goNbM<6?zdM51LC1
+R3
+R0
+w1617204531
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT_clk.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT_clk.v
+!i122 10
+R9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/DDIO_OUT_clk.v|
+!i113 1
+R6
+R7
+R8
+n@d@d@i@o_@o@u@t_clk
+vdebouncer
+Z10 !s110 1617283374
+!i10b 1
+!s100 mncAaHCml0In2]cZXz10D2
+R2
+IH5:Q4LO6UA_3;DP]2nMB_0
+R3
+R0
+w1617190841
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/debouncer.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/debouncer.v
+!i122 1
+L0 2 68
+R4
+r1
+!s85 0
+31
+Z11 !s108 1617283374.000000
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/debouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/debouncer.v|
+!i113 1
+R6
+R7
+R8
+vFSM1
+R1
+!i10b 1
+!s100 VnhGL<MS:m5@4]EQSP7041
+R2
+IUAS_Z[:04j;5naI4liK4T3
+R3
+R0
+w1617210178
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM1.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM1.v
+!i122 4
+L0 2 79
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM1.v|
+!i113 1
+R6
+R7
+R8
+n@f@s@m1
+vFSM2
+Z12 !s110 1617283376
+!i10b 1
+!s100 UBE6h3BCO0KkM4C<KMP3H1
+R2
+I`keOkkQ8gdW]4VW:z7jUR3
+R3
+R0
+w1617282767
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM2.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM2.v
+!i122 12
+L0 2 77
+R4
+r1
+!s85 0
+31
+Z13 !s108 1617283376.000000
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/FSM2.v|
+!i113 1
+R6
+R7
+R8
+n@f@s@m2
+voutput_control1
+R1
+!i10b 1
+!s100 kIl]ZiS1OOYCAY018E^_a3
+R2
+I`X7?nKfaH;a<eUKmihiLK0
+R3
+R0
+w1617235295
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control1.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control1.v
+!i122 3
+L0 2 138
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control1.v|
+!i113 1
+R6
+R7
+R8
+voutput_control2
+R12
+!i10b 1
+!s100 e`7^`d]>9U08`=acDZjLE0
+R2
+IP3lR[CeC=^U7CH8<_F^N71
+R3
+R0
+w1617282976
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control2.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control2.v
+!i122 13
+L0 2 135
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/output_control2.v|
+!i113 1
+R6
+R7
+R8
+vpll
+R10
+!i10b 1
+!s100 _Qghk2CdYkTM?8V?8U[JX1
+R2
+I:9Aim[X2Lm6zN2XZ48C`_2
+R3
+R0
+w1617185687
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/pll_sim/pll.vo
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/pll_sim/pll.vo
+!i122 0
+L0 32 270
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/pll_sim/pll.vo|
+!s90 -reportprogress|300|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/pll_sim/pll.vo|
+!i113 1
+R8
+vRAM1
+R1
+!i10b 1
+!s100 Q`N34M1dLhl4CUJiP]Gl_1
+R2
+IIFMN4Lz_c<ef5cf_O]`O]1
+R3
+R0
+w1617208987
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM1.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM1.v
+!i122 5
+L0 40 90
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM1.v|
+!i113 1
+R6
+R7
+R8
+n@r@a@m1
+vRAM2
+R12
+!i10b 1
+!s100 b>hoiBSW4HXk<[`2Fd3a53
+R2
+IRE5MlkCzUK5Ud5NmCbA3T1
+R3
+R0
+w1617214150
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM2.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM2.v
+!i122 14
+L0 40 89
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/RAM2.v|
+!i113 1
+R6
+R7
+R8
+n@r@a@m2
+vstate_change1
+R1
+!i10b 1
+!s100 LVON7SlAkAg[2U]LQc64Z2
+R2
+IBz0o?1ZH1`]nz``Gl:=Ub1
+R3
+R0
+w1617187590
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change1.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change1.v
+!i122 2
+Z14 L0 2 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change1.v|
+!i113 1
+R6
+R7
+R8
+vstate_change2
+R12
+!i10b 1
+!s100 OUW74me3^ahYcoIR74X2F3
+R2
+IM0`FXVQ8Y1C@<@;jC2?[92
+R3
+R0
+w1617213460
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change2.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change2.v
+!i122 11
+R14
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/state_change2.v|
+!i113 1
+R6
+R7
+R8
+vtb
+R12
+!i10b 1
+!s100 6iWbdY:]kOA8NkUjYii>Y2
+R2
+I1B[QiQGI2bFASAXz[=Z@01
+R3
+R0
+w1617283296
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/tb.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/tb.v
+!i122 15
+L0 2 195
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/tb.v|
+!i113 1
+R6
+R7
+R8
+vtop
+R1
+!i10b 1
+!s100 6@Aa;<Q[a4M6DPZhV`mcZ3
+R2
+I7TH27P6`5<Z_3hiWT:eaI0
+R3
+R0
+w1617281469
+8C:/Users/delta/Documents/Intelprojects/CRC_DDIO/top.v
+FC:/Users/delta/Documents/Intelprojects/CRC_DDIO/top.v
+!i122 6
+L0 1 335
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/delta/Documents/Intelprojects/CRC_DDIO/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/delta/Documents/Intelprojects/CRC_DDIO|C:/Users/delta/Documents/Intelprojects/CRC_DDIO/top.v|
+!i113 1
+R6
+R7
+R8

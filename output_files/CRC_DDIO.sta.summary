@@ -1,0 +1,181 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clkout'
+Slack : 5.727
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clkin'
+Slack : 6.761
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'tx_clk'
+Slack : 23.329
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'tx_clk'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clkin'
+Slack : 6.477
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clkout'
+Slack : 7.599
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_inst|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'board_clk'
+Slack : 9.670
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'tx_clk'
+Slack : 18.766
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DDIO_clk'
+Slack : 19.185
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clkin'
+Slack : 19.489
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clkout'
+Slack : 5.983
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clkin'
+Slack : 6.985
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'tx_clk'
+Slack : 23.546
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'tx_clk'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clkin'
+Slack : 6.402
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clkout'
+Slack : 7.611
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_inst|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'board_clk'
+Slack : 9.673
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'tx_clk'
+Slack : 18.743
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DDIO_clk'
+Slack : 19.157
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clkin'
+Slack : 19.457
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clkout'
+Slack : 6.700
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clkin'
+Slack : 6.996
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'tx_clk'
+Slack : 26.165
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'tx_clk'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clkin'
+Slack : 7.221
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clkout'
+Slack : 8.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_inst|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'board_clk'
+Slack : 9.336
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'tx_clk'
+Slack : 18.884
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clkin'
+Slack : 19.103
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DDIO_clk'
+Slack : 19.531
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clkout'
+Slack : 6.979
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clkin'
+Slack : 7.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'tx_clk'
+Slack : 26.379
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'tx_clk'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clkin'
+Slack : 6.856
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clkout'
+Slack : 8.175
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_inst|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'board_clk'
+Slack : 9.286
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'tx_clk'
+Slack : 18.882
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clkin'
+Slack : 19.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DDIO_clk'
+Slack : 19.521
+TNS   : 0.000
+
+------------------------------------------------------------
