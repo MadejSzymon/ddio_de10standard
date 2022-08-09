@@ -1,0 +1,43 @@
+
+module output_control1 (clk,state_reg);
+
+//INPUTS:
+input clk;
+input [1:0] state_reg;
+
+
+
+//OUTPUTS:
+
+
+//OTHER PARAMETER, NETS AND REGISTERS
+
+
+initial begin
+
+end
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+always @( posedge clk) begin 
+    case (state_reg)  
+        0 : begin
+         end
+        1 : begin
+	
+         end
+        2 : begin
+				
+				end
+         end
+		  3 : begin
+				
+		  end
+		  default: begin
+			   
+		  end
+    endcase
+end
+ 
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////

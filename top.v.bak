@@ -1,0 +1,9 @@
+module top(board_clk,btn);
+input board_clk;
+input btn;
+
+
+wire tx_clk;
+wire state_reg_1a;
+wire state_reg_1a;
+endmodule 

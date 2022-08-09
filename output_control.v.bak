@@ -1,0 +1,97 @@
+
+module output_control(clk,counter,state_reg,tick_ENCODE,tick_WRITE_TO_1,tick_IDLE,wren_1a,address_1a,data_1a,PRBSa_data);
+
+//INPUTS:
+input clk;
+input [1:0] state_reg;
+
+
+
+//OUTPUTS:
+output reg tick_ENCODE;
+output reg tick_WRITE_TO_1;
+output reg tick_IDLE;
+output reg wren_1a;
+output reg [4:0] address_1a;
+output reg [15:0] data_1a;
+
+//OTHER PARAMETER, NETS AND REGISTERS
+output reg [11:0] PRBSa_data;
+reg [15:0] poly_div_a;
+integer i_a = 16;
+integer address_0_flag = 1;
+output reg [5:0] counter;
+
+initial begin
+	tick_ENCODE <= 1'b0;
+	tick_WRITE_TO_1 <= 1'b0;
+	tick_IDLE <= 1'b0;
+	poly_div_a <= 16'b1011100000000000;
+	PRBSa_data <= 12'b111000101010;
+	data_1a <= {16{1'b0}};
+	wren_1a <= 1'b0;
+	address_1a <= {5{1'b0}};
+	counter <= 0; 
+end
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+always @( posedge clk) begin 
+    case (state_reg)  
+        0 : begin
+         end
+        1 : begin
+				tick_IDLE <= 0;
+				PRBSa_data <= {PRBSa_data[1] ^ PRBSa_data[0], PRBSa_data[11:1]};
+				tick_ENCODE <= 1;
+         end
+        2 : begin
+				if (i_a == 16 && tick_WRITE_TO_1 == 0) begin	
+					data_1a <= {PRBSa_data,4'b0000};
+					i_a = i_a - 1;
+				end
+				else if(data_1a[i_a]==0 && tick_WRITE_TO_1 == 0) begin
+					poly_div_a <= poly_div_a >> 1;
+					i_a<=i_a-1;
+				end
+				else if (tick_WRITE_TO_1 == 0) begin
+					data_1a <= data_1a ^ poly_div_a;
+				end
+				if(poly_div_a[15:4] == 0 && tick_WRITE_TO_1 == 0) begin
+					data_1a <= {PRBSa_data,data_1a[3:0]};
+					wren_1a <= 1;
+					poly_div_a <= 16'b1011100000000000;
+					i_a <= 16;
+					if (address_0_flag == 0) begin
+						address_1a <= address_1a + 5'b000001;
+					end
+					else begin
+						address_0_flag = 0;
+					end
+					tick_WRITE_TO_1 <= 1;
+				end
+         end
+		  3 : begin
+				wren_1a <= 0;
+				tick_WRITE_TO_1 <= 0;
+				tick_ENCODE <= 0;
+				if (counter != 31) begin
+					tick_IDLE <= 1;
+					counter <= counter + 1; 
+				end
+				else begin
+					tick_IDLE <= 0;
+					address_1a <= {5{1'b0}};
+					data_1a <= {16{1'b0}};
+					PRBSa_data <= 12'b111000101010;
+					counter <= 0;
+				end
+		  end
+		  default: begin
+			   
+		  end
+    endcase
+end
+ 
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////

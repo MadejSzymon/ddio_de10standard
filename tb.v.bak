@@ -1,0 +1,53 @@
+module tb ();
+
+parameter nbr_states = 2;
+parameter mess_len = 12;
+parameter crc_len = 4;
+
+reg board_clk;
+reg btn;
+
+wire tick_START_a;
+wire tick_START_b;
+wire tx_clk;
+wire rx_clk;
+wire DDIO_clk;
+wire [:] state_reg_1a;
+wire [:] state_next_1a;
+wire [:] state_reg_1b;
+wire [:] state_next_1b;	
+
+
+initial begin
+	board_clk <= 0;
+	btn <= 0;
+end
+
+always begin
+	#10;
+	board_clk = !board_clk;
+end
+
+top(
+	.btn(btn),
+	.board_clk(board_clk)
+	.tick_START_a(tick_START_a),
+	.tick_START_b(tick_START_b),
+	.tx_clk(tx_clk),
+	.rx_clk(rx_clk),
+	.DDIO_clk(DDIO_clk),
+	.state_reg_1a(state_reg_1a),
+	.state_next_1a(state_next_1a),
+	.state_reg_1b(state_reg_1b),
+	.state_next_1b(state_next_1b)
+);
+
+initial
+begin
+	#50;
+	btn = 1;
+	#40;
+	btn = 0;
+	
+end
+endmodule 

@@ -1,0 +1,49 @@
+
+module output_control2 (clk,state_reg);
+
+parameter nbr_states = 2;
+parameter mess_len = 12;
+parameter crc_len = 4;
+parameter address_init_param;
+
+
+//INPUTS:
+input clk;
+input [nbr_states:0] state_reg;
+
+
+//OUTPUTS:
+
+
+//OTHER PARAMETER, NETS AND REGISTERS
+
+initial begin
+
+end
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+always @( posedge clk) begin 
+    case (state_reg)  
+        0 : begin
+				
+         end
+        1 : begin
+				
+         end
+        2 : begin
+				
+			end
+		  3 : begin
+				
+		  end
+		 4 : begin
+				
+		 end
+		  default: begin
+			   
+		  end
+    endcase
+end
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
